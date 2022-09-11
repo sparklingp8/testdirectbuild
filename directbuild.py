@@ -1,6 +1,12 @@
-print("First 100 Fibonnaci numbers are: ")
-a, b = 0, 1
-for _ in range(100):
-  print(a,",", end="")
-  a, b = b, a+b
-print("\nDone")
+def factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
+
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+
+
+num = 300
+print("The factorial of", num, "is", factorial(num))
